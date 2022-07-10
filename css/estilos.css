@@ -66,6 +66,12 @@ header {
     margin-right: 2rem;
 }
 
+.menusuperior li a:hover {
+    color: #dcdcdc;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
 /* SECCIÓN HOME*/
 
 .servicios {
@@ -93,6 +99,11 @@ header {
 .card .image-card {
     width: 10rem;
     margin-bottom: 2rem;  
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 1s;
 }
 
 .infopago {
@@ -227,11 +238,23 @@ input:checked ~ .acc-content {
     align-items: center;
 }
 
+.infoblog:hover {
+    transform: scale(1.04);
+    transition: all 1s;
+    background-color: white;
+}
+
 .infoblogreverse {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     align-items: center;
+}
+
+.infoblogreverse:hover {
+    transform: scale(1.04);
+    transition: all 1s;
+    background-color: white;
 }
 
 /*CONTACTO*/
@@ -249,7 +272,10 @@ form {
     padding: 0.7rem 0.5rem;
     box-shadow: 0px 0px 15px 0px solid black;
     margin: .5rem;
-        
+}
+
+.recuadro:focus {
+    background-color:#45528e0d;
 }
 
 .formcontacto .selector {
@@ -279,6 +305,10 @@ form {
     margin: .5rem;
     border: none;
     font-size: 1.2rem;
+}
+
+.btc-enviar:hover {
+    background-color: #485592;
 }
 
 .mapa iframe {
@@ -338,6 +368,10 @@ form {
 
 .menuinferior i {
     font-size: 23px;
+}
+
+.menuinferior i:hover {
+    transform: translatey(-5px);
 }
 
 /*-----RESPONSIVE-----*/
