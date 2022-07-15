@@ -1,1 +1,16 @@
 node_modules/
+
+Header index
+<div class="contenedornav">
+                
+                <a href="./pages/home.html"><img src="./assets/img/logo.png" class="logo" alt="logo"></a>
+                
+                    <nav>
+                         <ul class="menusuperior">
+                            <li><a href="./pages/servicios.html">Servicios</a></li>
+                            <li><a href="./pages/faqs.html">FAQ'S</a></li>
+                            <li><a href="./pages/blog.html">Blog</a></li>
+                            <li><a href="./pages/contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+            </div>
