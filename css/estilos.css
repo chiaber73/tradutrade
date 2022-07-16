@@ -4,17 +4,16 @@
 }
 
 body {
-    
-
     background-color: #f3f3f3;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .fondo img {
-    
+  
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 2rem;
+    margin-top: 10px;
     width: 100%;
     height: 100%;
 }
@@ -28,48 +27,18 @@ h1, h2, h3 {
 
 /* NAVEGADOR*/
 
-header {
-    padding: 0.5rem;
-    background-color: #252525;
-    grid-area: header;
-    
-}
-
 .logo {
-    width: 3.3rem;
-    margin: .1rem auto .1rem 1rem;
+    width: 50px;
+    margin: .4rem auto .4rem 1rem;
 }
 
-.menusuperior {
-    display: flex;
-    margin-right: 3rem;
-}
-
-.contenedornav {
-    display: flex;
+header {
+    display: flex;    
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-}
-
-.menusuperior, .menuinferior{
-    list-style-type: none;
-    text-align: center;
-    
-}
-
-.menusuperior li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-size: 1.1rem;
-    margin-right: 2rem;
-}
-
-.menusuperior li a:hover {
-    color: #dcdcdc;
-    transform: scale(1.2);
-    font-weight: bold;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    grid-area: header;
 }
 
 /* SECCIÓN HOME*/
@@ -79,9 +48,20 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     margin: auto 5rem;
-    grid-area: servicios;
 }
 
+.card {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.card-title {
+    color: #2c295b;
+}
+
+.card img {
+    margin-top: .6rem;
+}
+/*
 .card {
     background-color: white;
     width: 180px;
@@ -99,10 +79,10 @@ header {
 .card .image-card {
     width: 10rem;
     margin-bottom: 2rem;  
-}
+}*/
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all 1s;
 }
 
@@ -133,7 +113,27 @@ header {
 }
 
 /*FAQS*/
-.container {
+
+.accordions {
+    margin-bottom: 3rem;
+}
+.accordion-button {
+    border-radius: 10px;
+    background-color: #4f5fa3;
+    color: white;    
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #4f5fa3;
+    color: white;
+}
+
+.accordion-body {
+    padding-top: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+/*.container {
     align-items: center; 
 }
 .accordions {
@@ -198,23 +198,7 @@ input:checked + .acc-labela::after {
 input:checked ~ .acc-content {
     max-height: 100vh;
     padding:1em;
-}
-
-/*.faqs {
-    text-align: center;
-}
-
-.pregunta p {
-    background-color: rgb(236 183 24 / 50%);
-    border: #f07640 ridge;
-    border-radius: 7px 0 7px 0;
-    padding: 1rem;
-    margin: 2rem 15rem;
-}
-
-.respuesta p {
-    margin: 1rem 20rem;
-}
+}*/
 
 /* BLOG */
 
@@ -258,14 +242,40 @@ input:checked ~ .acc-content {
 }
 
 /*CONTACTO*/
-
-form {
-    margin-left: 1.5rem;
-    margin-bottom: 1.5rem;
-}
 .formcontacto {
     grid-area: formcontacto;
+    margin-left: 1rem;
 }
+
+input {
+    margin: .7rem 0;
+}
+
+select option {
+    color: #5d5d5d;
+}
+
+.btn {
+    background-color: #4f5fa3;
+    color: white;
+    width: 15rem;
+    
+}
+
+.btn:hover {
+    background-color: white;
+    color: #4f5fa3;
+    border: 2px solid #4f5fa3;
+
+}
+
+
+/*form {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: auto;
+}
+
 
 .formcontacto .recuadro, textarea{
     width: 30rem;
@@ -285,7 +295,7 @@ form {
 
 .desplegable select {
     position: relative;
-    width: 31.2rem;
+    width: 30rem;
     padding: 0.7rem 0.5rem;
     box-shadow: 0px 0px 15px 0px solid black;
     margin: .5rem;
@@ -301,7 +311,7 @@ form {
     background-color: #4f5fa3;
     color: rgb(235, 235, 235);
     padding: 1rem;
-    width: 31.2rem;
+    width: 30rem;
     margin: .5rem;
     border: none;
     font-size: 1.2rem;
@@ -309,10 +319,10 @@ form {
 
 .btc-enviar:hover {
     background-color: #485592;
-}
+}*/
 
 .mapa iframe {
-    margin: 3rem 1rem 1rem 3rem;
+    margin: 5rem 1rem 1rem 7rem;
 }
 
 .mapa {
@@ -344,30 +354,34 @@ form {
 /* FOOTER */
 
 .footer {
-    background-color: #252525; 
+    background-color: #292929; 
+    box-shadow: 0 2px 4px rgba(93, 93, 93, 0.3) 600%;
     color: #e2e2e2;
-    padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: baseline;
     grid-area: footer;
 }
 
 .menuinferior {
+    list-style-type: none;
+    text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 1rem;
     
 }
 
 .menuinferior a {
     color: #e2e2e2;
-    padding: 0 1rem;
+   
 }
 
 .menuinferior i {
     font-size: 23px;
+    padding: 0 1rem;
 }
 
 .menuinferior i:hover {
@@ -378,20 +392,13 @@ form {
 
 @media (max-width: 480px)
 {
-    
-    .contenedornav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-        
-    }
-    .menusuperior li a{
+    /*.menusuperior li a{
         font-size: 15px;
         margin-right: 1.5rem;
     
-    }
+    }*/
+
+  
     
     .servicios {
         display: flex;
@@ -415,7 +422,7 @@ form {
         ;
     }
 
-    .formcontacto .recuadro, textarea{
+    /*.formcontacto .recuadro, textarea{
         width: 25rem;
         padding: 0.7rem 0.5rem;
         box-shadow: 0px 0px 15px 0px solid black;
@@ -443,7 +450,7 @@ form {
     }
     .btc-enviar {
         width: 26rem;
-    }
+    }*/
 
     .mapa iframe {
         width: 25rem;
@@ -462,7 +469,7 @@ form {
     }
     /*FAQS*/
 
-.container {
+/*.container {
     align-items: center;
     max-width: 480px; 
 }
@@ -477,7 +484,7 @@ form {
     font-size: 1.7rem;
     max-width: 480px;
     align-items: center;
-}
+}*/
 
 /*SERVICIOS*/
 
