@@ -1,0 +1,25 @@
+{
+  "name": "coder_proyecto_berlese",
+  "version": "1.0.0",
+  "description": "<h1>Proyecto TraduTrade</h1>\r <p>Este es un proyecto de emprendimiento para ofrecer servicios de traducción y servicios relacionados</p>g",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiaber73/Proyecto-TraduTrade.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chiaber73/Proyecto-TraduTrade/issues"
+  },
+  "homepage": "https://github.com/chiaber73/Proyecto-TraduTrade#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
