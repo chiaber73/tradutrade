@@ -1,10 +1,22 @@
+/*VARIABLES*/
 @import "./utilities/variables";
+
+/*NORMALIZE*/
 @import "./utilities/normalize";
+
+/*MIXIN*/
+@import "./utilities/mixin";
+
+/*LAYOUT*/
 @import "./layout/_header";
 @import "./layout/_footer";
+
+/*VIEWS*/
 @import "./views/home";
 @import "./views/servicios";
 @import "./views/blog";
 @import "./views/faqs";
 @import "./views/contacto";
+
+/*RESPONSIVE*/
 @import "./utilities/mediaqueries";

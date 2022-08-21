@@ -49,10 +49,8 @@ h1, h2 {
 }
 
 .servicios {
-    display: flex;
-    flex-direction: row;
+    @include flex (row, center, none);
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .card--servicio {
@@ -84,17 +82,13 @@ h1, h2 {
 }
 
 .infopago {
-    display: flex;
+    @include flex (row, space-evenly, none);
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
     margin: $spacing-medium;
 }
 
 .cards {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flex (row, none, center);
     background-color: white;
     max-width: 400px;
     padding: $spacing-small;
@@ -102,9 +96,7 @@ h1, h2 {
 }
 
 .infopago {
-    display: flex;
-    flex-direction: row;
-    align-items: space-evenly;
+    @include flex (row, none, space-evenly);
     flex-wrap: wrap;
     margin: $spacing-medium;
 }

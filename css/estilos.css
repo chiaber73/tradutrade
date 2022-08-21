@@ -1,6 +1,8 @@
+/*VARIABLES*/
 /*COLORES*/
 /*ESPACIOS*/
 /*FONT-SIZE*/
+/*NORMALIZE*/
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +13,8 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   min-height: 100vh; }
 
+/*MIXIN*/
+/*LAYOUT*/
 .logo {
   width: 100px;
   margin: .4rem auto; }
@@ -104,6 +108,7 @@ body {
   40% {
     transform: rotate(-15deg); } }
 
+/*VIEWS*/
 .portada {
   background-image: url(../assets/img/fondo.jpg);
   background-size: cover;
@@ -149,8 +154,9 @@ h1, h2 {
 .servicios {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  align-items: none;
+  flex-wrap: wrap; }
 
 .card--servicio {
   margin: 2rem;
@@ -176,14 +182,16 @@ h1, h2 {
 
 .infopago {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: none;
+  flex-wrap: wrap;
   margin: 3.3rem; }
 
 .cards {
   display: flex;
   flex-direction: row;
+  justify-content: none;
   align-items: center;
   background-color: white;
   max-width: 400px;
@@ -193,6 +201,7 @@ h1, h2 {
 .infopago {
   display: flex;
   flex-direction: row;
+  justify-content: none;
   align-items: space-evenly;
   flex-wrap: wrap;
   margin: 3.3rem; }
@@ -328,15 +337,16 @@ input {
     border: 2px solid #016773; }
 
 .mapa iframe {
-  margin: 1rem 1rem 1rem 7rem;
-  flex: 1 0 10rem; }
+  margin: 1rem 1rem 1rem 5rem;
+  flex: 1 0 10rem;
+  width: 800px;
+  height: 500px; }
 
+/*RESPONSIVE*/
 @media (min-width: 320px) and (max-width: 576px) {
   /*HOME*/
   h1 {
     font-size: 40px; }
-  .navbar-nav {
-    font-size: 3em; }
   .containerportada .title {
     font-size: 3em; }
   .card_title {
@@ -348,6 +358,7 @@ input {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center; }
+  /*FOOTER*/
   .footer p {
     font-size: 13px; }
   .icons a {
@@ -385,8 +396,7 @@ input {
     max-width: 375px;
     margin-left: 1rem; }
   .mapa iframe {
-    max-width: 375px;
-    margin: 1.5rem; } }
+    width: 375px; } }
 
 @media (min-width: 577px) and (max-width: 992px) {
   /*HOME*/
@@ -400,6 +410,7 @@ input {
     font-size: 1.07rem; }
   .cards {
     margin-top: 2rem; }
+  /*FOOTER*/
   .footer {
     flex-direction: column-reverse;
     justify-content: space-around;
@@ -434,10 +445,10 @@ input {
     flex-direction: column;
     align-items: center; }
   .formcontacto {
-    max-width: 575px;
+    width: 575px;
     margin-left: 1rem; }
   .mapa iframe {
-    max-width: 575px;
+    width: 575px;
     margin: 1rem; } }
 
 @media (max-width: 1304px) {

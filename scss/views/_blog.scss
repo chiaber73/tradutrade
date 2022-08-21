@@ -18,10 +18,7 @@
 }
 
 .infoblog, .infoblogreverse {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  @include flex (row, space-around, center);
   flex-wrap: nowrap;
   margin: 0 2rem; 
   &:hover {
