@@ -20,8 +20,9 @@
 .infoblog, .infoblogreverse {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: nowrap;
   margin: 0 2rem; 
   &:hover {
     transform: scale(1.04);
@@ -29,7 +30,6 @@
     background-color: white;
   }
 }
-
 .infoblogreverse {
   flex-direction: row-reverse;
 }

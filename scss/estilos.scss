@@ -1,21 +1,10 @@
 @import "./utilities/variables";
-@import "./layout/_footer";
+@import "./utilities/normalize";
 @import "./layout/_header";
+@import "./layout/_footer";
 @import "./views/home";
 @import "./views/servicios";
 @import "./views/blog";
 @import "./views/faqs";
 @import "./views/contacto";
 @import "./utilities/mediaqueries";
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f3f3f3;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    min-height: 100vh;
-}

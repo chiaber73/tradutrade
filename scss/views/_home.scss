@@ -50,8 +50,8 @@ h1, h2 {
 
 .servicios {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -93,11 +93,20 @@ h1, h2 {
 
 .cards {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: white;
     max-width: 400px;
     padding: $spacing-small;
-    align-items: center;
     box-shadow: 10px 15px 10px #48529944;
+}
+
+.infopago {
+    display: flex;
+    flex-direction: row;
+    align-items: space-evenly;
+    flex-wrap: wrap;
+    margin: $spacing-medium;
 }
 
 .title--pago {
