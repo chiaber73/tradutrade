@@ -1,0 +1,35 @@
+.blog .image-blog {
+  width: 20rem;
+  margin: 2rem;
+  border: solid black 1px;
+  padding: 0.5rem; }
+
+.blog p {
+  margin: 2rem 3rem;
+  padding: 1rem; 
+
+  &::selection {
+    color: $alternative;
+  }
+}
+
+.infoblog h3, .infoblogreverse h3 {
+    color: $secondary; 
+}
+
+.infoblog, .infoblogreverse {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0 2rem; 
+  &:hover {
+    transform: scale(1.04);
+    transition: all 1s;
+    background-color: white;
+  }
+}
+
+.infoblogreverse {
+  flex-direction: row-reverse;
+}

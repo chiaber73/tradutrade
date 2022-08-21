@@ -13,91 +13,76 @@
 </head>
 <body>
     <main>
-
-        <header>
-            <a href="home.html"><img src="../assets/img/logo.png" class="logo" alt="logo"></a>
-            <nav class="navbar navbar-expand-lg">
-              <div class="container-fluid">
-                <!--<img class="logo" src="./assets/img/logo.png" alt="logo">
-                <a class="navbar-brand" href="#">Navbar</a>-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+        <!--MENÚ-->
+      <header>
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/img/logo.png" alt="Eventos Holimori" class="logo" class="rounded-circle">
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                    <a class="nav-link" href="home.html">Home</a>
-                    <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
-                    <a class="nav-link" href="blog.html">Blog</a>
-                    <a class="nav-link" href="faqs.html">Preguntas frecuentes</a>
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                    
-                  </div>
+                    <ul class="navbar-nav ms-auto" id="navbar__categories">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a class="navbar__categories__active" href="servicios.html">Servicios</a>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faqs.html">Preguntas Frecuentes</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
                 </div>
-              </div>
-            </nav>
-                
-          </header>
+            </div>
+          </nav>            
+      </header>
 
-    <h2>Nuestros Servicios</h2>
+    <!--DESCRIPCIÓN DE SERVICIOS-->
 
-    <section class="servicio" id="servicio">
+    <section class="servicio">
         <div class="infoservicio">
-        <img src="../assets/img/image-servicio.jpg" class="image-servicio" alt="image-servicio">
-            <h5>Traducciones con carácter público</h5>
-            <p>Nos especializamos en traducciones con caracter público de toda aquella documentación que requiere
+            <div class="item__servicio1">
+                <p class="title__servicio">TRADUCCIONES CON CARÁCTER PÚBLICO</p>
+                <p class="description__servicio">Nos especializamos en traducciones con caracter público de toda aquella documentación que requiere
                 de la intervención de un Traductor público matriculado.
-                Es considerada documentación pública los documentos personales, notariales, societarios, entre otros.
-            </p>
-            <a href="#servicio"><i class="fa fa-arrow-circle-up"></i></a>
-        </div>
-        <div class="infoservicio">
-        <img src="../assets/img/image-servicio.jpg" class="image-servicio" alt="image-servicio">
-            <h5>Traducciones crypto</h5>
-            <p>Contamos con experiencia en el manejo de términos utilizados en el campo de blockchain y criptomonedas en general.            </p>
-            <a href="#servicio"><i class="fa fa-arrow-circle-up"></i></a>
-        </div>
-            <div class="infoservicio">
-        <img src="../assets/img/image-servicio.jpg" class="image-servicio" alt="image-servicio">
-            <h5>Otras traducciones en general</h5>
-            <p>La traducción de otros textos en general no especializados que no contienen terminología técnica específica tales como textos periodísticos,
-                instructivos de uso, cartas de presentación, comunicaciones internas, etc.
-            </p>
-            <a href="#servicio"><i class="fa fa-arrow-circle-up"></i></a>
-        </div>
-            <div class="infoservicio">
-        <img src="../assets/img/image-servicio.jpg" class="image-servicio" alt="image-servicio">
-            <h5>Transcripciones de audio</h5>
-            <p>La transcripción y su respectiva traducción permite una mayor difusión del contenido en redes o plataformas como YouTube o Vimeo, 
+                Es considerada documentación pública los documentos personales, notariales, societarios, entre otros.</p>
+            </div>
+            <div class="item__servicio">
+                <p class="title__servicio">TRADUCCIONES CRYPTO</p>
+                <p class="description__servicio">Contamos con experiencia en el manejo de términos utilizados en el campo de blockchain y criptomonedas en general.</p>
+            </div>
+            <div class="item__servicio">
+                <p class="title__servicio">OTRAS TRADUCCIONES EN GENERAL</p>
+                <p class="description__servicio">La traducción de otros textos en general no especializados que no contienen terminología técnica específica tales como textos periodísticos,
+                instructivos de uso, cartas de presentación, comunicaciones internas, etc.</p>
+            </div>
+            <div class="item__servicio">
+                <p class="title__servicio">TRANSCRIPCIONES DE AUDIO</p>
+                <p class="description__servicio">La transcripción y su respectiva traducción permite una mayor difusión del contenido en redes o plataformas como YouTube o Vimeo, 
                 lo que permite elevar la cantidad de suscriptores de un canal.
-                Asimismo, es de gran utilidad para el área educativa en el dictado de cursos a distancia.
-            </p>
-            <a href="#servicio"><i class="fa fa-arrow-circle-up"></i></a>
-        </div>
-            <div class="infoservicio">
-        <img src="../assets/img/image-servicio.jpg" class="image-servicio" alt="image-servicio">
-            <h5>Capacitaciones</h5>
-            <p>Brindamos capacitaciones en el aprendizaje de la lengua. También es posible optar por aprendizaje especializados
+                Asimismo, es de gran utilidad para el área educativa en el dictado de cursos a distancia.</p>
+            </div>
+            <div class="item__servicio">
+                <p class="title__servicio">CAPACITACIONES</p>
+                <p class="description__servicio">Brindamos capacitaciones en el aprendizaje de la lengua. También es posible optar por aprendizaje especializados
                 del idioma en un área específca en la que se requiera, tal como empresarial, turismo, entre otras.
             </p>
-            <a href="#servicio"><i class="fa fa-arrow-circle-up"></i></a>
-        </div>
+            </div>
 
+        </div>
     </section>
 
+    <!--FOOTER-->
     <footer class="footer">
-
         <p>Copyright © Tradu|e Traducciones 2022. All Rights Reserved.</p>
-
-        <ul class="menuinferior">
-            
-            <li><a href="https://www.linkedin.com/in/chiaraberlese/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.facebook.com/cberlese/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            
+        <ul class="icons">
+          <li><a href="https://www.linkedin.com/in/chiaraberlese/" class="icon icon--linkedin" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+          <li><a href="https://wa.me/5492323679533" class="icon icon--whatsapp" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+          <li><a href="https://t.me/ChiaraBerlese" class="icon icon--telegram" target="_blank"><i class="fa fa-telegram" aria-hidden="true" target="_blank"></i></a></li>
+          <li><a href="https://www.facebook.com/cberlese/" class="icon icon--instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
         </ul>
-        
-    </footer>
+      </footer>
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

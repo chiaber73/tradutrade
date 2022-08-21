@@ -1,0 +1,106 @@
+.portada {
+    background-image: url(../assets/img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+.containerportada {
+    background-color: rgba(0, 0, 0, 0.411);
+    backdrop-filter: blur(1px);
+    width: 100%;
+    height: 100%;
+    padding-top: $spacing-xlarge;
+}
+
+.title, .subtitle {
+    color: white;
+    font-size: 4em;
+    position: relative;
+    display: inline;
+    justify-content: center;
+}
+
+.subtitle {
+    font-size: $text-base;
+    line-height: 3rem;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: $text-medium;
+}
+
+.icon--one {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    font-size:$spacing-large;
+    color: #112d52;
+
+    &:hover {
+        color: #112d52;
+    }
+}
+
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card--servicio {
+    margin: $spacing-small;
+    background-color: white;
+    padding: 1rem 0;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    
+    &:hover {
+        transform: scale(1.05);
+        transition: all 1s;
+        background-color:#feeda3;
+        cursor: pointer;
+    }
+    &_title {
+        color: black;
+        font-size: $text-small;
+    }
+}
+
+.experiencia {
+    margin: 30px 120px;
+}
+
+.title--progress {
+    padding: 20px 0 1px 0;
+}
+
+.infopago {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: $spacing-medium;
+}
+
+.cards {
+    display: flex;
+    background-color: white;
+    max-width: 400px;
+    padding: $spacing-small;
+    align-items: center;
+    box-shadow: 10px 15px 10px #48529944;
+}
+
+.title--pago {
+    font-size: $text-base;
+}
+

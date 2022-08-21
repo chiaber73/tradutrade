@@ -1,0 +1,164 @@
+@media (min-width:320px) and (max-width: 576px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .navbar-nav {
+        font-size: $text-base;
+    }
+    
+    .containerportada .title {
+        font-size: $text-medium;
+    }
+
+    .card_title {
+        font-size: 1.07rem;
+    }
+
+    .cards {
+        margin-top: $spacing-small;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .icons a {
+        font-size: $text-base;
+    }
+
+    /*SERVICIOS*/
+    .title__servicio {
+        font-size: 2rem;
+    }
+    
+    .description__servicio {
+        font-size: 1.7rem;
+    }
+
+    /*BLOG*/
+    .infoblog, .infoblogreverse {
+        flex-direction: column;
+        align-items: center; 
+    }
+        
+    .infoblog p, .infoblogreverse p {
+        font-size: $text-base;
+    }
+
+    .infoblog h3, .infoblogreverse h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    /*FAQS*/
+    .accordion-button {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .accordion-body {
+        font-size: 1.3rem;
+    }
+
+    /*CONTACTO*/
+    .containercontacto {
+        flex-direction: column;
+    }
+
+    .formcontacto {
+        max-width: 540px;
+        margin-left: 1rem;
+    }
+
+    .mapa iframe {
+        width: 32.5rem;
+        margin: 1.5rem;
+    } 
+}
+
+@media (min-width:577px) and (max-width: 992px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .navbar-nav {
+        font-size: $text-base;
+    }
+    
+    .containerportada .title {
+        font-size: $text-medium;
+    }
+
+    .card_title {
+        font-size: 1.07rem;
+    }
+
+    .cards {
+        margin-top: $spacing-small;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .icons a {
+        font-size: $text-base;
+    }
+
+    /*SERVICIOS*/
+    .title__servicio {
+        font-size: 2rem;
+    }
+    
+    .description__servicio {
+        font-size: 1.7rem;
+    }
+
+    /*BLOG*/
+    .infoblog, .infoblogreverse {
+        flex-direction: column;
+        align-items: center; 
+    }
+        
+    .infoblog p, .infoblogreverse p {
+        font-size: $text-base;
+    }
+
+    .infoblog h3, .infoblogreverse h3 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    /*FAQS*/
+    .accordion-button {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .accordion-body {
+        font-size: 1.3rem;
+    }
+
+    /*CONTACTO*/
+    .containercontacto {
+        flex-direction: column;
+    }
+
+    .formcontacto {
+        max-width: 540px;
+        margin-left: 1rem;
+    }
+
+    .mapa iframe {
+        width: 32.5rem;
+        margin: 1.5rem;
+    } 
+}

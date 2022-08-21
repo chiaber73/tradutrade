@@ -1,0 +1,31 @@
+.containerfaqs {
+    margin: 100px;
+}
+
+.accordion {
+
+    margin-top: -10px;
+    &-button {
+        border-radius: 10px;
+        background-color: $primary;
+        color: white;    
+    }
+    
+    &-button:not(.collapsed) {
+        background-color: $secondary;
+        color: white;
+    }
+
+    &-button.collapsed::before {
+        color: white;
+    }
+    &-button.collapsed::after {
+        color: white;
+    }
+    
+    &-body {
+        padding-top: 2rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
